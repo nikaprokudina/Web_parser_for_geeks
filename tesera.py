@@ -14,6 +14,20 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 url = "https://tesera.ru/games/"
 driver.get(url)
 driver.implicitly_wait(10)
+count_games = 0
+count_pages = 0
+
+while True:
+    try:
+        # Click on the "Load More" link to load the next page
+        load_more_button = driver.find_element(By.XPATH, "//div[@id='games-pages']/a")
+        load_more_button.click()
+        time.sleep(5)  # Add a short delay to wait for the page to load
+        count_pages += 1
+        print("--------------------------------", count_pages)
+    except:
+        print("No more pages.")
+        break
 
 all_games = driver.find_elements(By.CSS_SELECTOR, "div.feed_item.game_item")
 
@@ -115,6 +129,8 @@ for game in all_games:
     time_per_games.append(time_per_game)
     image_urls.append(image_url)
     short_descriptions.append(short_description)
+    count_games += 1
+    print("page", count_games)
 
     # переход на страницу игры
     descrip = []
@@ -152,5 +168,6 @@ data = pd.DataFrame(
     columns=["titles", "links", "rating_BoardGameGeeks", "user_ratings", "tesera_ratings", "english_names", "number_of_playerss", "ages", "time_per_games", "image_urls", "short_descriptions", "descriptions"])
 # export data into a csv file.
 data.to_csv("/Users/nika/Desktop/парсер/2nd try/data_scraping_project/data/tesera.csv", index=False)
+
 
 driver.quit()
