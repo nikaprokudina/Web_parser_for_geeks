@@ -51,7 +51,7 @@ def split_time_per_game(row):
         elif 'от' in row['time_per_games']:
             parts = row['time_per_games'].split(' ')
             print(parts)
-            return pd.Series([parts[0], None])
+            return pd.Series([parts[1], None])
         else:
             parts = row['time_per_games'].split(' ')
             print(parts)
