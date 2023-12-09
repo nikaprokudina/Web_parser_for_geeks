@@ -37,6 +37,7 @@ def extract_year(english_name):
         return None
 
 data['year'] = data['english_names'].apply(extract_year)
+data['year'] = data['year'].astype('Int64')
 
 
 # редактируем время игры
@@ -45,16 +46,13 @@ def split_time_per_game(row):
     try:
         if '-' in row['time_per_games']:
             parts = row['time_per_games'][:-4].split(' - ')
-            print(parts)
             return pd.Series([parts[0], parts[1]])
         # если в строке есть "от"
         elif 'от' in row['time_per_games']:
             parts = row['time_per_games'].split(' ')
-            print(parts)
             return pd.Series([parts[1], None])
         else:
             parts = row['time_per_games'].split(' ')
-            print(parts)
             return pd.Series([parts[0], None])
     except:
         return pd.Series([None, None])
