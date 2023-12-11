@@ -40,4 +40,7 @@
 
 Данное веб-приложение будет полезно для гиков и любителей настольных игр :)
 
+![IMG_1992](https://github.com/nikaprokudina/Web_parser_for_geeks/assets/129796936/91223d8d-ee95-4301-a3f9-ee6fafba90d4)
+
+
 ![котище](https://i08.fotocdn.net/s131/9e80f43cb6dfe434/public_pin_l/2951096178.jpg)
