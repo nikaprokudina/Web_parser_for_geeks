@@ -21,7 +21,7 @@ app.add_middleware(
 )
 
 @app.get("/list/")
-async def category_rank(
+async def list_games(
     page: int = 0,
     size: int = 12,
     search: str = '',

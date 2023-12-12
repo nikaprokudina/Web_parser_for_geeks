@@ -1,0 +1,6 @@
+api/.env
+api/__pycache__
+api/tesera.csv
+api/api.tar
+front/node_modules
+front/front.tar

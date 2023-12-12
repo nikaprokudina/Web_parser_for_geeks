@@ -1,5 +1,4 @@
 import pymongo
-import requests
 import csv
 from os import environ as env
 from dotenv import load_dotenv
