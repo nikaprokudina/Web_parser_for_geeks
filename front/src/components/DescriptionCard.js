@@ -2,40 +2,35 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import { CardActionArea } from '@mui/material';
+import CardActionArea from '@mui/material/CardActionArea';
 
 function DescriptionCard({page}) {
-    console.log(page)
     return (
-        <Card sx={{ width: 800, height: 200 }}>
+        <Card sx={{height: 400 }} >
             <CardActionArea
                 sx={{
                     display: 'flex',
-                    flexDirection: 'row',
+                    flexDirection: 'column',
                     justifyContent: 'left',
-                    width: 800,
-                    height: 200,
+                    height: '100%'
                 }}
                 href={page.links}
             >
                 <CardMedia
                     component="img"
-                    sx={{ width: 200, height: 200 }}
+                    sx={{ width: 200, height: 200, paddingTop: 1 }}
                     image={page.image_urls || 'https://placehold.co/400?text=No Image'}
                     alt={page.titles}
                 />
-                <CardContent
-                    sx={{ width: 600, height: 160, margin: '20px' }}
-                >
-                    <Typography gutterBottom variant="h5" component="div">
+                <CardContent>
+                    <Typography gutterBottom variant="subtitle2">
                         {page.titles}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         {page.short_descriptions}
                     </Typography>
                 </CardContent>
-            </CardActionArea>
+            </CardActionArea >
         </Card>
     );
 }
