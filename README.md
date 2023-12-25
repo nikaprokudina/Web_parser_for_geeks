@@ -40,4 +40,18 @@
 
 Данное веб-приложение будет полезно для гиков и любителей настольных игр :)
 
+Общий вид сайта:
+![image](https://github.com/nikaprokudina/Web_parser_for_geeks/assets/129796936/e3a2ed93-cab7-4aed-adb7-dc361a293a5b)
+![image](https://github.com/nikaprokudina/Web_parser_for_geeks/assets/129796936/5fd4e47c-d87c-4cee-bd7a-062adfde4868)
+
+Текстовой поиск (ищем игры по слову "дюна"):
+![image](https://github.com/nikaprokudina/Web_parser_for_geeks/assets/129796936/5d79862a-14df-4f06-84e1-5c7166c542d4)
+
+Расширенные настройки поиска:
+![image](https://github.com/nikaprokudina/Web_parser_for_geeks/assets/129796936/d9d74780-c1d8-4963-86db-7445ef15a781)
+![image](https://github.com/nikaprokudina/Web_parser_for_geeks/assets/129796936/33c18ccb-5b41-4b52-9e2e-e23544b6301d)
+
+
+
+❤︎❤︎❤︎❤︎❤︎
 ![котище](https://i08.fotocdn.net/s131/9e80f43cb6dfe434/public_pin_l/2951096178.jpg)
